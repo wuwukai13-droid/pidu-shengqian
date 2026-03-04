@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: wuwukai13-droid/pidu-shengqian
+  branch: main
+  auth_type: implicit
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "offers"
+    label: "优惠信息"
+    folder: "offers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "截止日期", name: "expiryDate", widget: "date"}
+      - {label: "分类", name: "categories", widget: "list"}
+      - {label: "商家名称", name: "merchant", widget: "string"}
+      - {label: "优惠内容", name: "body", widget: "markdown"}
