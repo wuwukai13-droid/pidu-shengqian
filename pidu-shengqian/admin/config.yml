@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: wuwukai13-droid/pidu-shengqian
   branch: main
+  base_url: https://pidushengqian.com
+  auth_endpoint: api/auth
 
 media_folder: "images"
 public_folder: "/images"
@@ -18,3 +21,4 @@ collections:
       - {label: "分类", name: "categories", widget: "list"}
       - {label: "商家名称", name: "merchant", widget: "string"}
       - {label: "优惠内容", name: "body", widget: "markdown"}
+
