@@ -1,12 +1,6 @@
 backend:
-  name: github
-  repo: wuwukai13-droid/pidu-shengqian
+  name: git-gateway
   branch: main
-  auth_type: implicit
-  # 下面这两行是关键！
-  site_domain: pidushengqian.com
-  base_url: https://pidushengqian.com
-  auth_endpoint: /   # 指向根路径
 
 media_folder: "images"
 public_folder: "/images"
